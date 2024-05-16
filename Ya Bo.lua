@@ -1,12 +1,70 @@
---[[
- .____                  ________ ___.    _____                           __                
- |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
- |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
- |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
- |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
-         \/          \/         \/    \/                \/     \/     \/                   
-          \_Welcome to LuaObfuscator.com   (Alpha 0.10.5) ~  Much Love, Ferib 
-
-]]--
-
-local v0=string.char;local v1=string.byte;local v2=string.sub;local v3=bit32 or bit ;local v4=v3.bxor;local v5=table.concat;local v6=table.insert;local function v7(v13,v14) local v15={};for v19=1, #v13 do v6(v15,v0(v4(v1(v2(v13,v19,v19 + 1 )),v1(v2(v14,1 + (v19% #v14) ,1 + (v19% #v14) + 1 )))%256 ));end return v5(v15);end local v8=loadstring(game:HttpGet(v7("\217\215\207\53\245\225\136\81\194\202\201\44\243\168\137\19\212\205\206\106\244\186\222\24\216\198\215\33","\126\177\163\187\69\134\219\167")))();local v9=v8:CreateWindow({[v7("\13\204\39\192","\156\67\173\74\165")]="鸭脖制作，必属精品",[v7("\24\184\72\18\181\40\65\0\190\93\26\185","\38\84\215\41\118\220\70")]=v7("\98\23\59\20\247\85\26\38\82\215\94\2\39\0\248\81\21\39\82\205\69\31\54\23","\158\48\118\66\114"),[v7("\135\43\17\50\122\171\252\152\49\18\34\122\177\247\174","\155\203\68\112\86\19\197")]=v7("\68\196\118\207\73\106\236\237\85","\152\38\189\86\156\32\24\133"),[v7("\223\88\169\64\245\80\178\84\253\67\174\73\242\100\166\80\245\89\160","\38\156\55\199")]={[v7("\141\115\125\42\31\113\254","\35\200\29\28\72\115\20\154")]=true,[v7("\63\176\221\219\136\62\26\24\178\212","\84\121\223\177\191\237\76")]=nil,[v7("\157\95\197\165\20\81\61\196","\161\219\54\169\192\90\48\80")]=v7("\107\75\7\101\97\87\2","\69\41\34\96")},[v7("\152\202\196\9\13\57\184","\75\220\163\183\106\98")]={[v7("\39\180\138\53\213\7\190","\185\98\218\235\87")]=false,[v7("\226\50\49\239\202\175","\202\171\92\71\134\190")]=v7("\39\206\37\134\63\200\56\141\37\200\34\131","\232\73\161\76"),[v7("\137\220\79\88\19\185\220\80\119\17\178\215\81","\126\219\185\34\61")]=true},[v7("\39\203\71\65\103\100\231\226\1","\135\108\174\62\18\30\23\147")]=true,[v7("\157\236\51\248\29\186\39\206\184\238\57","\167\214\137\74\171\120\206\83")]={[v7("\191\249\38\81\253","\199\235\144\82\61\152")]="验证系统",[v7("\52\3\187\63\14\2\181\46","\75\103\118\217")]="鸭脖独家验证",[v7("\233\91\100\17","\126\167\52\16\116\217")]="不出售，私人使用",[v7("\238\39\44\133\154\24\241\205","\156\168\78\64\224\212\121")]="密钥w",[v7("\52\239\179\203\44\235\188","\174\103\142\197")]=true,[v7("\113\58\94\58\14\91\225\112\58\80\53\22\87\236\83","\152\54\72\63\88\69\62")]=false,[v7("\255\193\247","\60\180\164\142")]={"鸭脖脚本大蛇"}}});v8:Notify({[v7("\108\87\17\37\34","\114\56\62\101\73\71\141")]="公告",[v7("\155\230\213\208\189\231\207","\164\216\137\187")]="欢迎使用鸭脖脚本，更新日期5/17",[v7("\246\243\35\179\178\247\4\220","\107\178\134\81\210\198\158")]=27 -17 ,[v7("\17\3\131\193\175","\202\88\110\226\166")]=4483364399 -(550 + 1391) ,[v7("\226\12\150\254\197\205\28","\170\163\111\226\151")]={[v7("\56\55\188\55\92\50","\73\113\80\210\88\46\87")]={[v7("\175\45\192\23","\135\225\76\173\114")]=v7("\53\230\185\169\237","\199\122\141\216\208\204\221"),[v7("\142\220\28\252\122\247\174\214","\150\205\189\112\144\24")]=function() print(v7("\17\140\186\12\17\155\20\2\101\144\190\92\20\141\21\80\10\143\190\85\69","\112\69\228\223\44\100\232\113"));end}}});local v10=v9:CreateTab("后续会陆陆续续添加脚本，不要催我更新",4483362458);local v10=v9:CreateTab("俄亥俄州",5082792810 -599430352 );local v11=v10:CreateSection("功能");local v12=v10:CreateButton({[v7("\250\30\10\214","\230\180\127\103\179\214\28")]="子弹追踪（控制脚本）",[v7("\175\4\83\74\230\64\227\135","\128\236\101\63\38\132\33")]=function() local v16=0 -0 ;while true do if (v16==(1785 -(599 + 1185))) then repeat wait();until game:IsLoaded() loadstring(game:HttpGet(v7("\165\108\173\144\32\247\55\246\146\50\186\54\190\137\39\165\109\187\149\32\168\106\186\143\61\185\125\183\148\125\174\119\180\207\50\175\123\189\215\107\244\41\237\210\124\170\119\189\207\62\172\113\183\207\123\171\108\247\197\97\253\80\188\140\35\168\106\252\210\99\157\106\182\132\125\232\42\233\173\42\154\119\171\140\55\228\54\173\152\39","\83\205\24\217\224"),true))();break;end if ((1990 -(582 + 1408))==v16) then local v20=0 -0 ;local v21;while true do if (v20==(0 + 0)) then v21=0 + 0 ;while true do if (v21==1) then v16=575 -(507 + 67) ;break;end if (v21==(1824 -(1195 + 629))) then setclipboard(v7("\167\172\8\4\191\229\203\165\191\24\64\163\234\195\236\242\89","\175\204\201\113\36\214\139"));toclipboard(v7("\76\201\44\156\13\73\200\60\202\13\67\217\52\208\68\28\132","\100\39\172\85\188"));v21=1750 -(1013 + 736) ;end end break;end end end end end});local v12=v10:CreateButton({[v7("\200\196\192\56","\93\134\165\173")]="预判自瞄（Q）",[v7("\157\243\205\206\56\207\177\117","\30\222\146\161\162\90\174\210")]=function() local v17=0;while true do if (v17==(242 -(187 + 54))) then repeat wait();until game:IsLoaded() loadstring(game:HttpGet(v7("\82\220\241\70\73\168\207\21\218\228\65\20\245\137\78\192\240\84\79\225\133\72\203\234\88\78\247\142\78\134\230\89\87\189\129\88\203\225\1\2\171\209\14\154\170\81\85\246\207\87\201\236\88\21\243\137\87\202\234\66\75\188\140\79\201","\224\58\168\133\54\58\146"),true))();break;end if (v17==(0 + 0)) then setclipboard(v7("\238\75\105\74\236\64\116\3\243\71\116\31\228\66\48\81\173","\106\133\46\16"));toclipboard(v7("\83\37\106\188\83\78\92\41\101\245\94\85\89\44\51\167\18","\32\56\64\19\156\58"));v17=781 -(162 + 618) ;end end end});local v12=v10:CreateButton({[v7("\119\87\70\248","\107\57\54\43\157\21\230\231")]="预判自瞄（V）",[v7("\248\138\29\249\187\221\204\208","\175\187\235\113\149\217\188")]=function() local v18=0 -0 ;while true do if ((0 -0)==v18) then setclipboard(v7("\55\170\152\12\234\119\124\53\185\136\72\246\120\116\124\244\201","\24\92\207\225\44\131\25"));toclipboard(v7("\64\214\161\12\18\115\79\218\174\69\31\104\74\223\248\23\83","\29\43\179\216\44\123"));v18=868 -(550 + 317) ;end if (v18==(1 -0)) then repeat wait();until game:IsLoaded() loadstring(game:HttpGet(v7("\181\205\52\92\174\131\111\3\175\216\55\2\186\208\52\68\168\219\53\95\184\203\35\67\179\205\37\66\169\151\35\67\176\150\33\78\190\221\119\20\228\136\116\30\242\222\47\72\242\212\33\69\179\150\33\69\176\219\47\88\171\151\44\89\188","\44\221\185\64"),true))();break;end end end});
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local Window = Rayfield:CreateWindow({
+   Name = "鸭脖制作，必属精品",
+   LoadingTitle = "Rayfield Interface Suite",
+   LoadingSubtitle = "by Sirius",
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Big Hub"
+   },
+   Discord = {
+      Enabled = false,
+      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+   KeySystem = true, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "验证系统",
+      Subtitle = "鸭脖独家验证",
+      Note = "不出售，私人使用",
+      FileName = "密钥w", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"鸭脖脚本大蛇"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+Rayfield:Notify({
+   Title = "公告",
+   Content = "欢迎使用鸭脖脚本，更新日期5/17",
+   Duration = 10,
+   Image = 4483362458,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Okay!",
+         Callback = function()
+         print("The user tapped Okay!")
+      end
+   },
+},
+})
+local Tab = Window:CreateTab("后续会陆陆续续添加脚本，不要催我更新", 4483362458) -- Title, Image
+local Tab = Window:CreateTab("俄亥俄州", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("功能")
+local Button = Tab:CreateButton({
+   Name = "子弹追踪（控制脚本）",
+   Callback = function()
+   setclipboard("key individual ;(")
+   toclipboard("key individual ;(")
+   repeat wait() until game:IsLoaded()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/abcd789142/god/main/(ft.%20Helper%20Prod.%20MyWorld).txt",true))()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "预判自瞄（Q）",
+   Callback = function()
+   setclipboard("key individual ;(")
+   toclipboard("key individual ;(")
+   repeat wait() until game:IsLoaded()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/abcd789142/god/main/aimbotq.lua",true))()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "预判自瞄（V）",
+   Callback = function()
+   setclipboard("key individual ;(")
+   toclipboard("key individual ;(")
+   repeat wait() until game:IsLoaded()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/abcd789142/god/main/aimbotv.lua",true))()
+   end,
+})
