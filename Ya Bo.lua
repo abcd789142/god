@@ -24,20 +24,6 @@ local Window = Rayfield:CreateWindow({
       Key = {"鸭脖脚本大蛇"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
    }
 })
-Rayfield:Notify({
-   Title = "公告",
-   Content = "欢迎使用鸭脖脚本，更新日期5/17",
-   Duration = 10,
-   Image = 4483362458,
-   Actions = { -- Notification Buttons
-      Ignore = {
-         Name = "Okay!",
-         Callback = function()
-         print("The user tapped Okay!")
-      end
-   },
-},
-})
 local Tab = Window:CreateTab("后续会陆陆续续添加脚本，不要催我更新", 4483362458) -- Title, Image
 local Tab = Window:CreateTab("俄亥俄州", 4483362458) -- Title, Image
 local Section = Tab:CreateSection("功能")
@@ -47,7 +33,7 @@ local Button = Tab:CreateButton({
    setclipboard("key individual ;(")
    toclipboard("key individual ;(")
    repeat wait() until game:IsLoaded()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/abcd789142/god/main/(ft.%20Helper%20Prod.%20MyWorld).txt",true))()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/abcd789142/god/main/(ft.%20Helper%20Prod.%20MyWorld).lua",true))()
    end,
 })
 local Button = Tab:CreateButton({
