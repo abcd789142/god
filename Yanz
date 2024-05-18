@@ -703,8 +703,8 @@ function OrionLib:MakeWindow(WindowConfig)
 		MainWindow.Visible = false
 		UIHidden = true
 		OrionLib:MakeNotification({
-			Name = "脚本已关闭",
-			Content = "重新执行脚本才可打开",
+			Name = ".",
+			Content = ".",
 			Time = 5
 		})
 		WindowConfig.CloseCallback()
