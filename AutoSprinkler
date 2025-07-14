@@ -1,3 +1,3 @@
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
-LocalPlayer:Kick("You  have  been  banned!\nDot  Cheat!")
+LocalPlayer:Kick("You  have  been  banned!\nDo not  Cheat!")
