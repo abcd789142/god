@@ -1,157 +1,157 @@
-if QQGroup == "QQ群979878728" and Scripts == "Interstellar phantom" and type == "Server" then
-local Interstellar = {
-    getorb = false,
-    area = "City",
-    mainexe = false,
-    hoop = false,
-    opencrystal = false,
-    petshop = false,
-    evolvepet = false,
-    birth = 9e9,
-    autobirth = false,
+如果QQGroup==“QQ群 979878728”，Scripts===“星际幻影”，type==“Server”，那么
+功能
+而
+做
+功能
+“蓝色球体”
+结束
+结束
+结束
+结束9“橙球 x50”9crystalshow虚假的
+功能0hoop功能
 }
 
-local CoreGui = game:GetService("StarterGui")
-local Players = game:GetService("Players")
-local LocalPlayer = Players.LocalPlayer
+而10getorbpetshop做0"StarterGui")
+功能"Players")
+“橙球”
 
-local crystalshow = {}
-local OpenCrystal = ""
+结束
+结束""
 
-for i, crystal in pairs(game:GetService("Workspace").mapCrystalsFolder:GetChildren()) do
-    crystalshow[i] = crystal.Name
-end
+结束
+结束
+功能
 
-local Maps = {}
-local Races = ""
+真正的
+结束
 
-for i, Map in pairs(game:GetService("Workspace").raceMaps:GetChildren()) do
-    Maps[i] = Map.Name
-end
+结束
+结束"Players").LocalPlayer
+当地的"RunService").Heartbeat
 
-local petshow = {}
-local BuyPetShop = ""
-local EvolvePet = ""
+功能
+功能
+而""
 
-for i, pet in pairs(game:GetService("ReplicatedStorage").cPetShopFolder:GetChildren()) do
-    petshow[i] = pet.Name
-end
+做1
+功能"ReplicatedStorage").rEvents.petEvolveEvent:FireServer("evolvePet"结束
+结束
 
-local speeds = 5
-local nowe = false
-local tpwalking = false
-local speaker = game:GetService("Players").LocalPlayer
-local heartbeat = game:GetService("RunService").Heartbeat
+结束0heartbeatnowe ==5
+结束
+当地的
+v.Parent = game.Players.LocalPlayer.ownedGamepasses"https://github.com/AURORA666Script/ui/raw/refs/heads/main/Silent-ui.luau"))()"Players").LocalPlayer
+功能""而'16060333448')"RunService").Heartbeat
 
-local function updatespeed(char, hum)
-	if nowe == true then
-		tpwalking = false
+做'16060333448')
+结束'16060333448'Main:Dropdown（“比赛终点传送”，“Select Region”，地图，函数（值）
+种族=价值'16060333448'Main:Button（“点击传送”，函数（）
 		heartbeat:Wait()
 		task.wait(.1)
 		heartbeat:Wait()
 
-		for i = 1, speeds do
-			spawn(function()
-				tpwalking = true
-				while tpwalking and heartbeat:Wait() and char and hum and hum.Parent do
-					if hum.MoveDirection.Magnitude > 0 then
+game.Players.LocalPlayer.Character.HumanoidRootPart = game.workspace.raceMaps[selectedMap].finishPart.CFrame3101667897Main:Toggle（“自动参赛”，“joinRace”，false，function(joinRace)1结束
+产卵（虚假的）
+当地的
+当地的
+虚假的
 						char:TranslateBy(hum.MoveDirection)
-					end
-				end
-			end)
-		end
-	end
-end
+当地的
+真正的
+功能)
+当地的
+真正的
+当地的
 
-speaker.CharacterAdded:Connect(function(char)
-	local char = speaker.Character
-	if char then
+演讲人. You you:Connect you（Char）
+真正的
+当地的
 		task.wait(0.7)
-		char.Humanoid.PlatformStand = false
-		char.Animate.Disabled = false
-	end
-end)
+真正的
+当地的
+真正的
+功能)
 
-local tpwalkingspeed = false
-local RunService = game:GetService("RunService")
-local hb = RunService.Heartbeat
-local speed = 1
-local brightLoop = nil
-local RunService = game:GetService("RunService")
-local Lighting = game:GetService("Lighting")
+当地的
+当地的
+真正的
+当地的
+真正的
+结束
+结束
 
-local dropdown = {}
-local playernamedied = ""
+结束
+当地的
 
-for i, player in pairs(game.Players:GetPlayers()) do
-    dropdown[i] = player.Name
-end
+功能
+功能
+而
 
-local function Refresh()
-    dropdown = {}
-    for i, player in ipairs(Players:GetPlayers()) do
-        dropdown[i] = player.Name
-    end
-end
-local library = loadstring(game:HttpGet("https://github.com/AURORA666Script/ui/raw/refs/heads/main/Silent-ui.luau"))()
+做
+功能
+结束
+结束
+结束
+结束
+当地的
 
-local window = library:new("星际幻影 | 极速传奇 | "..identifyexecutor())
+"复制他/她的信息"
 
-local Page = window:Tab("主要功能",'16060333448')
-local Main = Page:section("主要",true)
-local Orb = Page:section("球",true)
+功能
+而
+做
 
-local Page2 = window:Tab("其他",'16060333448')
-local Crystal = Page2:section("水晶",true)
-local Evolve = Page2:section("进化",true)
+功能
+真正的
+结束
 
-local Page3 = window:Tab("刷重生",'16060333448')
-local Birth = Page3:section("重生",true)
+结束
+结束
 
-local LST = window:Tab("查看和复制玩家",'16060333448')
-local Look = LST:section("查看",true)
-local Copy = LST:section("复制",true)
+当地的
+功能
+功能
 
-Main:Button("点击即可时间循环中午",function()
-    if brightLoop then
+而
+做
         brightLoop:Disconnect() 
-    end
-    local function brightFunc()
-        Lighting.Brightness = 2
-        Lighting.ClockTime = 14
-        Lighting.FogEnd = 100000
-        Lighting.GlobalShadows = false
-        Lighting.OutdoorAmbient = Color3.fromRGB(128, 128, 128)
-    end
+功能
+结束
+结束
+结束
+结束
+当地的
+"复制他/她的信息"
+功能
 
 
-    brightLoop = RunService.RenderStepped:Connect(brightFunc)
-end)
+而
+做
 
-Main:Label("输入的数字越大效果越明显")
+"步数: "
 
-Main:Textbox("漂移加速", "", "输入数字", function(Value)
-    if tonumber(Value) then
-        speed = tonumber(Value)
-        tpwalkingspeed = true
-        local player = game:GetService("Players").LocalPlayer
-        local character = player.Character or player.CharacterAdded:Wait()
-        local humanoid = character and character:FindFirstChildWhichIsA("Humanoid")
+"比赛次数: "
+"环: "
+"宝石: "
+"等级: "
+"经验: "
+结束
+结束
         
-        if humanoid then
+其他的
             RunService:UnbindFromRenderStep("TPWalk")
 
-            RunService:BindToRenderStep("TPWalk", Enum.RenderPriority.Character.Value, function(delta)
-                if tpwalkingspeed and character and humanoid and humanoid.Parent then
-                    if humanoid.MoveDirection.Magnitude > 0 then
-                        character:TranslateBy(humanoid.MoveDirection * speed * delta * 10)
-                    end
-                end
+"请不要打开"
+结束
+如果humanoid.MoveDirection.General>0，则
+字符：TranslateBy（humanoid.MoveDirection*speed*delta*10）
+结束
+结束
             end)
-        end
-    else
-        print("Invalid input. Please enter a number.")
-    end
+结束
+其他的
+打印（“输入无效。请输入一个数字。”）
+结束
 end)
 
 Main:Button("点击即可漂移加速关闭",function()
@@ -177,32 +177,32 @@ end)
 
 Main:Button("获得所有通行证", function()
     for i, v in ipairs(game:GetService("ReplicatedStorage").gamepassIds:GetChildren()) do
-        v.Parent = game.Players.LocalPlayer.ownedGamepasses
-    end 
+结束
+当地的
 end)
 
-Main:Dropdown("比赛终点传送", "Select Region", Maps, function(Value)
-    Races = Value
+功能
+功能
 end)
 
-Main:Button("点击传送",function()
-game.Players.LocalPlayer.Character.HumanoidRootPart = game.workspace.raceMaps[selectedMap].finishPart.CFrame
+而
+做
 end)
 
-Main:Toggle("自动参赛", "joinRace", false, function(joinrace)
-    Interstellar.mainexe = joinrace
-    if Interstellar.mainexe then
-        if game.PlaceId == 3101667897 then
-            while Interstellar.mainexe do
+功能
+结束
+结束
+结束
+结束
                 game:GetService("ReplicatedStorage").rEvents.raceEvent:FireServer("joinRace")
-                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.workspace.raceMaps.Grassland.finishPart.CFrame
+当地的
                 task.wait(0.1)
-                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.workspace.raceMaps.Magma.finishPart.CFrame
+"复制他/她的信息"
                 task.wait(0.1)
-                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.workspace.raceMaps.Desert.finishPart.CFrame
+功能
                 task.wait(0.3)
-            end
-        elseif game.PlaceId == 3276265788 then
+而
+做
             while Interstellar.mainexe do
                 game:GetService("ReplicatedStorage").rEvents.raceEvent:FireServer("joinRace")
                 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.workspace.raceMaps.Speedway.finishPart.CFrame
@@ -330,15 +330,15 @@ Orb:Toggle("宝石球 x50", "collectOrb", false, function(orb)
     end)
 end)
 
-Crystal:Dropdown("选择水晶", "Choose Crystal", crystalshow, function(Value)
+Crystal:Dropdown("选择水晶", "环: ", crystalshow, "环: "(Value)
     OpenCrystal = Value
-end)
+"宝石: ")
 
-Crystal:Button("购买水晶", function()
+Crystal:Button("宝石: ", "选择玩家"()
 game:GetService('ReplicatedStorage').rEvents.openCrystalRemote:InvokeServer("openCrystal", OpenCrystal)
-end)
+"重置")
 
-Crystal:Toggle("自动购买", "Auto Buy Crystal", false, function(autobuy)
+Crystal:Toggle("复制他/她的信息", "名字: ", "选择玩家", "名字: "(autobuy)
     Interstellar.opencrystal = autobuy
     if Interstellar.opencrystal then
         while Interstellar.opencrystal do
@@ -455,37 +455,36 @@ spawn(function()
 end)
 
 local gems = Look:Label("宝石: " .. game:GetService("Players").LocalPlayer.Gems.Value)
-spawn(function()
-    while wait() do
-        pcall(function()
-            gems.Text = "宝石: " .. game:GetService("Players").LocalPlayer.Gems.Value
-        end)
-    end
-end)
+spawn(本地星际={()
+    getorb = wait() 虚假的
+        pcall(面积=“城市”，()
+            gems.Text = mainexe = .. game:GetService("Players").LocalPlayer.Gems.Value
+        虚假的)
+    hoop =
+虚假的)
 
-local Players = Copy:Dropdown("选择玩家", 'Dropdown', dropdown, function(v)
+opencrystal = Players = Copy:Dropdown(虚假的, 'Dropdown', dropdown, petshop=错(v)
     playernamedied = v
-end)
+evolvepet =)
 
-Copy:Button("重置", function()
+Copy:Button(虚假的, 出生=()
     Refresh()
     Players:SetOptions(dropdown)
-end)
+E)
 
 
-Copy:Button("复制他/她的信息", function()
-    local player = game:GetService("Players"):FindFirstChild(playernamedied)
-    if player then
-        local info = "名字: " .. player.Name .. "\n" ..
-                     "步数: " .. player.leaderstats.Steps.Value .. "\n" ..
-                     "比赛次数: " .. player.leaderstats.Races.Value .. "\n" ..
-                     "环: " .. player.leaderstats.Hoops.Value .. "\n" ..
-                     "宝石: " .. player.Gems.Value .. "\n" ..
-                     "等级: " .. player.level.Value .. "\n" ..
-                     "经验: " .. player.exp.Value
+Copy:Button(，, 自胎=错，()
+    结束 player = game:GetService("Players"):FindFirstChild(playernamedied)
+    当地的 player 当地的
+        虚假的 info = 当地的 .. player.Name .. "\n" ..
+                     虚假的 .. player.leaderstats.Steps.Value .. "\n" ..
+                     当地的 .. player.leaderstats.Races.Value .. "\n" ..
+                     当地的 .. player.leaderstats.Hoops.Value .. "\n" ..
+                     当地的 .. player.Gems.Value .. "\n" ..
+                     功能 .. player.level.Value .. "\n" ..
+                     如果 .. player.exp.Value
         setclipboard(info)
-    end
-end)
-else
-game.Players.LocalPlayer:Kick("请不要打开")
+    真正的
+然后)
+虚假的
 end
